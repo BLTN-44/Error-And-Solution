@@ -1,0 +1,53 @@
+# OS: MacOS Big Sur
+# IDA: PyCharm
+# Browser: Chrome
+# Goal: Use webdriver of selenium to open a a website with Chrome
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+# ERROR MESSAGE
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# Traceback (most recent call last):
+#   File "/Users/.../venv/lib/python3.8/site-packages/selenium/webdriver/common/service.py", line 72, in start
+#     self.process = subprocess.Popen(cmd, env=self.env,
+#   File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/subprocess.py", line 854, in __init__
+#     self._execute_child(args, executable, preexec_fn, close_fds,
+#   File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/subprocess.py", line 1702, in _execute_child
+#     raise child_exception_type(errno_num, err_msg, err_filename)
+# FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver'
+# During handling of the above exception, another exception occurred:
+# Traceback (most recent call last):
+#   File "<input>", line 5, in <module>
+#   File "/Users/.../venv/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+#     self.service.start()
+#   File "/Users/...A/venv/lib/python3.8/site-packages/selenium/webdriver/common/service.py", line 81, in start
+#     raise WebDriverException(
+# selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home 
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+# CODE
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# from selenium import webdriver
+# from selenium.webdriver.chrome.options import Options
+
+# url = "https://www.google.com"  
+
+# option = Options()
+# option.headless = True
+# driver = webdriver.Chrome()
+
+# driver.get(url)
+
+# driver.quit()
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+# SOLUTION ON MAC
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# On Terminal Run: brew install chromedriver
+
+# This command will start the install of the chromedriver.
+
+# Good Luck!
+# BLTN-44
