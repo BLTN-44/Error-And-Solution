@@ -1,7 +1,7 @@
 OS: MacOS Big Sur
 IDA: PyCharm
-Browser: I used Chrome and Firefox
-Goal: Use webdriver of selenium to open a a website with Chrome or Firefox
+Browser: I used Firefox
+Goal: Use webdriver of selenium to open a a website with Firefox
 
 ----------------------------------------------------------------------------------------------------------------------------------
 ERROR MESSAGE
