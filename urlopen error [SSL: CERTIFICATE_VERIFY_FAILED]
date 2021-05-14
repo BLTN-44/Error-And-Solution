@@ -1,0 +1,34 @@
+OS: MacOS Big Sur
+IDA: PyCharm
+Browser: Chrome
+
+----------------------------------------------------------------------------------------------------------------------------------
+ERROR MESSAGE
+----------------------------------------------------------------------------------------------------------------------------------
+
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1123)>
+
+----------------------------------------------------------------------------------------------------------------------------------
+CODE
+----------------------------------------------------------------------------------------------------------------------------------
+
+r = urllib.request.urlopen('https://analytics.usa.gov/').read()
+soup = BeautifulSoup(r, "lxml")
+type(soup)
+
+----------------------------------------------------------------------------------------------------------------------------------
+SOLUTION ON MAC
+----------------------------------------------------------------------------------------------------------------------------------
+
+# Instal and/or Update the Certificates
+
+# Via Terminal: 
+
+$ cd applications
+$ cd python3.8
+$ Install Certificates.command
+
+# Via Finder: 
+
+Applications/Python3.8/Install Certificates.command
+
