@@ -1,0 +1,31 @@
+# OS: MacOS Big Sur
+# IDA: PyCharm
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+# ERROR MESSAGE
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+#  File "/Users/K/Documents/PYTHON/WebScrapingClass/EstudoInfografico1/WebScrapingInfografico1.py", line 35
+# SyntaxError: Non-UTF-8 code starting with '\xe2' in file /Users/K/Documents/PYTHON/WebScrapingClass/EstudoInfografico1/WebScrapingInfografico1.py on line 36, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+
+# Process finished with exit code 1
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+# PROBLEM
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# File .py have a diferent UTF
+# In Brazil is UTF-8
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+# SOLUTION ON MAC
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# Add one of this commands bellow (with the #) at the top of the file.
+
+# coding: iso-8859-1 -*-
+# -*- encoding: utf-8 -*-
+
+
+# Good Luck!
+# BLTN-44
